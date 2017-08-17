@@ -15,12 +15,10 @@ public class BaseController {
 	private static final Logger logger = LoggerFactory.getLogger(BaseController.class);
 	
 	@RequestMapping(value="/", method=RequestMethod.GET)
-	public String welcome(ModelMap modelMap){
-		
+	public String welcome(ModelMap modelMap){	
 		modelMap.addAttribute("counter", ++counter);
 		modelMap.addAttribute("message","Welcome to Spring-MVC test application");
 		logger.debug("[welcome] counter : {}", counter);
 		return VIEW_INDEX;
 	}
-	
 }
