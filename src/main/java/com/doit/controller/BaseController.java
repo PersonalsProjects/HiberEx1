@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class BaseController {
-
 	private static int counter = 0;
 	private static final String VIEW_INDEX = "index";
 	private static final Logger logger = LoggerFactory.getLogger(BaseController.class);
