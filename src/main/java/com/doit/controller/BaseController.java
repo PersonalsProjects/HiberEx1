@@ -15,6 +15,7 @@ public class BaseController {
 	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String welcome(ModelMap modelMap){	
+		
 		modelMap.addAttribute("counter", ++counter);
 		modelMap.addAttribute("message","Welcome to Spring-MVC test application");
 		logger.debug("[welcome] counter : {}", counter);
